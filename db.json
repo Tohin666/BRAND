@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Vasya"
+    },
+    {
+      "id": 2,
+      "name": "Petya"
+    }
+  ],
+  "goods": [
+    {
+      "id": 1,
+      "name": "iPhone X",
+      "price": 70000,
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "name": "iPhone 8",
+      "price": 60000,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "iPhone 7",
+      "price": 50000,
+      "quantity": 2
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "name": "iPhone X",
+      "price": "70000",
+      "quantity": "1"
+    },
+    {
+      "id": "2",
+      "name": "iPhone 8",
+      "price": "60000",
+      "quantity": "2"
+    },
+    {
+      "id": "3",
+      "name": "iPhone 7",
+      "price": "50000",
+      "quantity": "1"
+    }
+  ]
+}

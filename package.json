@@ -4,7 +4,7 @@
   "description": "Course work",
   "main": "index.js",
   "scripts": {
-    "watch": "gulp watch",
+    "watch": "concurrently \"gulp watch\" \"json-server --watch db.json --port 5000\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Tohin666/BRAND#readme",
   "devDependencies": {
     "browser-sync": "^2.24.5",
+    "concurrently": "^3.6.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
   }
