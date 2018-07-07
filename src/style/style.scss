@@ -1820,6 +1820,7 @@ summary::-webkit-details-marker {
   &__img {
     margin-right: 21px;
     transition: .3s;
+    width: 100px;
   }
   &__img:hover {
     transform: scale(1.1);

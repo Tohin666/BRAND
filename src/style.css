@@ -1500,7 +1500,8 @@ summary::-webkit-details-marker {
 
 .cart-list__img {
   margin-right: 21px;
-  transition: .3s; }
+  transition: .3s;
+  width: 100px; }
 
 .cart-list__img:hover {
   transform: scale(1.1); }
