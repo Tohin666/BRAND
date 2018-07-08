@@ -14,35 +14,123 @@
       "id": 1,
       "name": "MANGO PEOPLE T-SHIRT",
       "price": 150,
-      "src": "img/cart-item1.jpg"
+      "src": "img/cart-item1.jpg",
+      "url": "single-page.html",
+      "color": "red",
+      "size": "xl"
     },
     {
       "id": 2,
       "name": "MOSCHINO CHEAP AND CHIC",
       "price": 561,
-      "src": "img/item_MOSCHINO_CHEAP_AND_CHIC.jpg"
+      "src": "img/item_MOSCHINO_CHEAP_AND_CHIC.jpg",
+      "url": "single-page.html",
+      "color": "black",
+      "size": "m"
     },
     {
       "id": 3,
-      "name": "iPhone 7",
-      "price": 50000,
-      "quantity": 2
+      "name": "CRESCENT BAY MARINA CLUB",
+      "price": 56,
+      "src": "img/item1.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "xxl"
+    },
+    {
+      "id": 4,
+      "name": "MANGO WOMAN T-SHIRT",
+      "price": 66,
+      "src": "img/item2.jpg",
+      "url": "single-page.html",
+      "color": "red",
+      "size": "s"
+    },
+    {
+      "id": 5,
+      "name": "MANGO PEOPLE JACKET",
+      "price": 63,
+      "src": "img/item3.jpg",
+      "url": "single-page.html",
+      "color": "blue",
+      "size": "xxl"
+    },
+    {
+      "id": 6,
+      "name": "WOMAN PEOPLE DRESS",
+      "price": 53,
+      "src": "img/item4.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "m"
+    },
+    {
+      "id": 7,
+      "name": "MANGO WOMAN DRESS",
+      "price": 43,
+      "src": "img/item5.jpg",
+      "url": "single-page.html",
+      "color": "black",
+      "size": "s"
+    },
+    {
+      "id": 8,
+      "name": "AGNES TOP",
+      "price": 56,
+      "src": "img/item6.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "l"
+    },
+    {
+      "id": 9,
+      "name": "BLAZE LEGGINGS",
+      "price": 53,
+      "src": "img/item7.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "xl"
+    },
+    {
+      "id": 10,
+      "name": "MANGO LEGGINGS",
+      "price": 50,
+      "src": "img/item8.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "xxl"
     }
   ],
   "cart": [
     {
-      "id": "1",
-      "name": "MANGO PEOPLE T-SHIRT",
-      "price": "150",
-      "src": "img/cart-item1.jpg",
+      "id": "3",
+      "name": "CRESCENT BAY MARINA CLUB",
+      "price": "56",
+      "src": "img/item1.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "xxl",
+      "quantity": "1"
+    },
+    {
+      "id": "4",
+      "name": "MANGO WOMAN T-SHIRT",
+      "price": "66",
+      "src": "img/item2.jpg",
+      "url": "single-page.html",
+      "color": "red",
+      "size": "s",
       "quantity": "1"
     },
     {
       "id": "2",
-      "quantity": "2",
       "name": "MOSCHINO CHEAP AND CHIC",
       "price": "561",
-      "src": "img/item_MOSCHINO_CHEAP_AND_CHIC.jpg"
+      "src": "img/item_MOSCHINO_CHEAP_AND_CHIC.jpg",
+      "url": "single-page.html",
+      "color": "black",
+      "size": "m",
+      "quantity": "2"
     }
   ]
 }

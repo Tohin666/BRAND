@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/addToCart.js"></script>
 </head>
 
 <body>
@@ -33,33 +34,33 @@
                         <details>
                             <summary>Browse<i class="fas fa-caret-down"></i></summary>
                             <div class="browse-drop">
-                                <h3><a href="#">Women</a></h3>
+                                <h3><a href="product.html">Women</a></h3>
                                 <hr>
                                 <ul>
-                                    <li><a href="#">Dresses</a></li>
-                                    <li><a href="#">Tops</a></li>
-                                    <li><a href="#">Sweaters/Knits</a></li>
-                                    <li><a href="#">Jackets/Coats</a></li>
-                                    <li><a href="#">Blazers</a></li>
-                                    <li><a href="#">Denim</a></li>
-                                    <li><a href="#">Leggings/Pants</a></li>
-                                    <li><a href="#">Skirts/Shorts</a></li>
-                                    <li><a href="#">Accessories </a></li>
-                                    <li><a href="#">Bags/Purses</a></li>
-                                    <li><a href="#">Swimwear/Underwear</a></li>
-                                    <li><a href="#">Nightwear</a></li>
-                                    <li><a href="#">Shoes</a></li>
-                                    <li><a href="#">Beauty</a></li>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Blazers</a></li>
+                                    <li><a href="product.html">Denim</a></li>
+                                    <li><a href="product.html">Leggings/Pants</a></li>
+                                    <li><a href="product.html">Skirts/Shorts</a></li>
+                                    <li><a href="product.html">Accessories </a></li>
+                                    <li><a href="product.html">Bags/Purses</a></li>
+                                    <li><a href="product.html">Swimwear/Underwear</a></li>
+                                    <li><a href="product.html">Nightwear</a></li>
+                                    <li><a href="product.html">Shoes</a></li>
+                                    <li><a href="product.html">Beauty</a></li>
                                 </ul>
-                                <h3><a href="#">Men</a></h3>
+                                <h3><a href="product.html">Men</a></h3>
                                 <hr>
                                 <ul>
-                                    <li><a href="#">Tees/Tank tops</a></li>
-                                    <li><a href="#">Shirts/Polos</a></li>
-                                    <li><a href="#">Sweaters</a></li>
-                                    <li><a href="#">Sweatshirts/Hoodies</a></li>
-                                    <li><a href="#">Blazers</a></li>
-                                    <li><a href="#">Jackets/vests</a></li>
+                                    <li><a href="product.html">Tees/Tank tops</a></li>
+                                    <li><a href="product.html">Shirts/Polos</a></li>
+                                    <li><a href="product.html">Sweaters</a></li>
+                                    <li><a href="product.html">Sweatshirts/Hoodies</a></li>
+                                    <li><a href="product.html">Blazers</a></li>
+                                    <li><a href="product.html">Jackets/vests</a></li>
                                 </ul>
                             </div>
                         </details>
@@ -360,9 +361,6 @@
         </div>
     </div>
 
-    <div class="cart" id="cart"></div>
-    <ul id="goods" class="goods"></ul>
-
     <div class="cart-content container">
         <div class="cart-list cart-list_shopping-cart">
             <div class="cart-list__header">
@@ -431,8 +429,8 @@
             </div>
         </div>
         <div class="clear-continue-buttons">
-            <a class="button button_white button_lg" href="#">CLEAR SHOPPING CART</a>
-            <a class="button button_white button_lg" href="#">CONTINUE SHOPPING</a>
+            <a class="button button_white button_lg" id="clearButton">CLEAR SHOPPING CART</a>
+            <a class="button button_white button_lg" href="product.html">CONTINUE SHOPPING</a>
         </div>
         <div class="shipping-coupon-checkout">
             <div class="shipping-option">
@@ -464,7 +462,7 @@
                 <div>Sub total<span class="price-tab">$900</span></div>
                 <div><span class="price-h5">GRAND TOTAL</span><span class="price-red">$900</span></div>
                 <hr>
-                <a class="button button_pad" href="#">proceed to checkout</a>
+                <a class="button button_pad" href="checkout.html">proceed to checkout</a>
             </div>
         </div>
     </div>
@@ -558,6 +556,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
