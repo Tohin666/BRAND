@@ -110,16 +110,36 @@
       "url": "single-page.html",
       "color": "white",
       "size": "xxl",
-      "quantity": "1"
+      "quantity": "6"
     },
     {
       "id": "4",
+      "quantity": "6",
       "name": "MANGO WOMAN T-SHIRT",
       "price": "66",
       "src": "img/item2.jpg",
       "url": "single-page.html",
       "color": "red",
-      "size": "s",
+      "size": "s"
+    },
+    {
+      "id": "9",
+      "name": "BLAZE LEGGINGS",
+      "price": "53",
+      "src": "img/item7.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "xl",
+      "quantity": "3"
+    },
+    {
+      "id": "5",
+      "name": "MANGO PEOPLE JACKET",
+      "price": "63",
+      "src": "img/item3.jpg",
+      "url": "single-page.html",
+      "color": "blue",
+      "size": "xxl",
       "quantity": "1"
     },
     {
@@ -130,7 +150,37 @@
       "url": "single-page.html",
       "color": "black",
       "size": "m",
-      "quantity": "2"
+      "quantity": "1"
+    },
+    {
+      "id": "6",
+      "name": "WOMAN PEOPLE DRESS",
+      "price": "53",
+      "src": "img/item4.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "m",
+      "quantity": "1"
+    },
+    {
+      "id": "7",
+      "name": "MANGO WOMAN DRESS",
+      "price": "43",
+      "src": "img/item5.jpg",
+      "url": "single-page.html",
+      "color": "black",
+      "size": "s",
+      "quantity": "1"
+    },
+    {
+      "id": "8",
+      "name": "AGNES TOP",
+      "price": "56",
+      "src": "img/item6.jpg",
+      "url": "single-page.html",
+      "color": "white",
+      "size": "l",
+      "quantity": "1"
     }
   ]
 }
