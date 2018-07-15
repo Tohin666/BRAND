@@ -226,6 +226,7 @@ header {
 .header-right {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .nav-flex {
@@ -2199,20 +2200,6 @@ label.required:after {
   min-width: 262px;
   z-index: 110;
   display: none;
-}
-
-.searchForItem {
-  //width: 100%;
-  ////display: block;
-  //padding: 1em;
-  //-webkit-box-sizing: border-box;
-  //-moz-box-sizing: border-box;
-  //box-sizing: border-box;
-  ////border: 1px solid #3498db;
-  ////-webkit-border-radius: 5px;
-  ////-moz-border-radius: 5px;
-  ////border-radius: 5px;
-
 }
 
 .live-search-list li {

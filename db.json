@@ -2,11 +2,18 @@
   "users": [
     {
       "id": 1,
-      "name": "Vasya"
+      "email": "vasya@mail.ru",
+      "password": "vasya"
     },
     {
       "id": 2,
-      "name": "Petya"
+      "email": "petya@mail.ru",
+      "password": "petya"
+    },
+    {
+      "email": "tohin@mail.ru",
+      "password": "tohin",
+      "id": 3
     }
   ],
   "goods": [

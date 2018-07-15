@@ -188,7 +188,8 @@ header {
 
 .header-right {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .nav-flex {
   display: flex;

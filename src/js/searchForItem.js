@@ -1,5 +1,5 @@
-jQuery(document).ready(function($){
-  
+jQuery(document).ready(function ($) {
+
   $.get('http://localhost:5000/goods/', {}, function (items) {
     items.forEach(function (item) {
       var $aItem = $('<a/>', {
@@ -10,30 +10,28 @@ jQuery(document).ready(function($){
       // console.log($liItem)
       $('.live-search-list').append($liItem)
     });
-    $('.live-search-list li').each(function(){
+    $('.live-search-list li').each(function () {
       $(this).attr('data-search-term', $(this).text().toLowerCase());
     });
   });
 
-  $('.searchForItem').on('focus', function(){
+  $('.searchForItem').on('focus', function () {
 
-        $('.live-search-list').show();
+    $('.live-search-list').show();
 
-    });
-  $('.searchForItem').on('focusout', function(){
+  });
+  $('.searchForItem').on('focusout', function () {
 
-    $('.live-search-list').hide();
+    $('.live-search-list').delay(500).hide(0);
 
   });
 
 
-
-
-  $('.searchForItem').on('keyup', function(){
+  $('.searchForItem').on('keyup', function () {
 
     var searchTerm = $(this).val().toLowerCase();
 
-    $('.live-search-list li').each(function(){
+    $('.live-search-list li').each(function () {
 
       if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
         $(this).show();

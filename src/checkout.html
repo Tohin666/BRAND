@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/addToCart.js"></script>
+    <script src="js/searchForItem.js"></script>
+    <script src="js/logInRegister.js"></script>
 </head>
 
 <body>
@@ -64,8 +66,9 @@
                             </div>
                         </details>
                     </div>
-                    <input type="text" placeholder="Search for Item...">
+                    <input type="text" placeholder="Search for Item..." class="searchForItem">
                     <button type="submit"><i class="fas fa-search"></i></button>
+                    <ul class="live-search-list"></ul>
                 </form>
             </div>
             <div class="header-right">
@@ -389,10 +392,11 @@
                                     status
                                 </li>
                             </ul>
-                            <a class="button button_white button_lg" href="#">CONTINUE</a>
+                            <!--<a class="button button_white button_lg" href="#">REGISTER</a>-->
                         </form>
-                        <form action="#"><h6>Already registed?</h6>
-                            <p>Please log in below</p>
+                        <form action="#">
+                            <!--<h6>Already registed?</h6>-->
+                            <p>Please log in or register below</p>
                             <div class="accordion-checkout__inputs">
                                 <div><label for="email6" class="required">EMAIL ADDRESS</label><br>
                                     <input type="email" id="email6" required>
@@ -403,8 +407,9 @@
                                 <span class="Required-Fileds">* Required Fileds</span>
                             </div>
 
-                            <a class="button button_white button_lg" href="#">LOG IN</a><a href="#" class="Forgot">Forgot
-                                Password ?</a>
+                            <button type="button" class="button button_white button_lg" id="logInButton">LOG IN</button>
+                            <button type="button" class="button button_white button_lg" id="registerButton">REGISTER</button>
+                            <!--<a href="#" class="Forgot">Forgot Password ?</a>-->
                         </form>
                     </div>
                 </div>
