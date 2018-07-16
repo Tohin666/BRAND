@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>BRAND - Product</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--    <link rel="stylesheet" href="normalize.css">-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/solid.css"
           integrity="sha384-g2aKxiZcFezoVOq4MsjaxuBbSxSlXD/NRQ5GaPLfvCtcTLgP3fYZKKAGxCM/wMfe" crossorigin="anonymous">
@@ -17,6 +17,7 @@
           integrity="sha384-xdTUmhbcetyLRVL4PAriRajOve+/5pjOiy5sJABnhXMcRMVc9HI9s2KmOCjjDK/P" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/addToCart.js"></script>
     <script src="js/searchForItem.js"></script>
 </head>
@@ -72,13 +73,13 @@
             </div>
             <div class="header-right">
                 <div class="img-cart"><a href="shopping-cart.html"><span class="lnr lnr-cart"></span></a>
-                    <!--                        <object data="img/cart.svg" type="image/svg-xml"><img src="img/cart.png" alt="cart"></object>-->
+
                 </div>
                 <a class="my-acc" href="checkout.html">My Account<i class="fas fa-caret-down"></i></a></div>
         </div>
     </header>
     <nav class="top-nav container">
-        <!--            <div class="mega-menu-hover">-->
+
         <ul class="nav-flex">
             <li><a href="index.html">Home</a></li>
             <li class="nav-active"><a href="product.html">Men</a>
@@ -347,15 +348,15 @@
                 </div>
             </li>
         </ul>
-        <!--            </div>-->
+
     </nav>
     <div class="New-Arrivals">
         <div class="container">
             <h2>New Arrivals</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Men</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="product.html">Men</a></li>
                     <li class="breadcrumb-item active" aria-current="page">New Arrivals</li>
                 </ol>
             </nav>
@@ -481,12 +482,13 @@
                     </div>
                 </div>
                 <div>
-                    <div class="selection__h">pRICE</div>
-                    <div class="selection__pRICE">
-                        <label for="from">From $</label> <input type="number" id="from" min="0" max="999" value="0">
-                        <label for="to">to $</label> <input type="number" id="to" min="1" max="1000" value="1000">
-                    </div>
 
+                    <p>
+                        <label for="amount" class="selection__h">Price range:</label>
+                        <input type="text" id="amount" readonly style="border:0; color:#f16d7f; font-weight:bold;">
+                    </p>
+
+                    <div id="slider-range"></div>
 
                 </div>
             </div>
@@ -772,15 +774,28 @@
         </div>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+</script>
 </body>
 
 </html>

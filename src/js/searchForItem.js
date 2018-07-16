@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
         href: 'single-page.html'
       });
       var $liItem = $('<li/>').append($aItem);
-      // console.log($liItem)
+
       $('.live-search-list').append($liItem)
     });
     $('.live-search-list li').each(function () {

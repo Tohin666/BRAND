@@ -130,16 +130,6 @@
       "size": "s"
     },
     {
-      "id": "9",
-      "name": "BLAZE LEGGINGS",
-      "price": "53",
-      "src": "img/item7.jpg",
-      "url": "single-page.html",
-      "color": "white",
-      "size": "xl",
-      "quantity": "3"
-    },
-    {
       "id": "5",
       "name": "MANGO PEOPLE JACKET",
       "price": "63",
@@ -157,17 +147,7 @@
       "url": "single-page.html",
       "color": "black",
       "size": "m",
-      "quantity": "1"
-    },
-    {
-      "id": "6",
-      "name": "WOMAN PEOPLE DRESS",
-      "price": "53",
-      "src": "img/item4.jpg",
-      "url": "single-page.html",
-      "color": "white",
-      "size": "m",
-      "quantity": "1"
+      "quantity": "2"
     },
     {
       "id": "7",

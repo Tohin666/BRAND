@@ -1,48 +1,14 @@
 (function ($) {
 
-  // function buildGoodsList() {
-  //   $.get('http://localhost:5000/goods', {}, function (goods) {
-  //     $('#goods').empty();
-  //     goods.forEach(function (good) {
-  //       var $button = $('<button/>', {
-  //         text: 'Buy',
-  //         class: 'buy',
-  //         'data-id': good.id,
-  //         'data-price': good.price,
-  //         'data-name': good.name,
-  //         'data-src': good.src,
-  //         'data-url': good.url,
-  //         'data-color': good.color,
-  //         'data-size': good.size
-  //       });
-  //       $('<li/>', {
-  //         text: good.name + ' (' + good.quantity + ')'
-  //       }).append($button).appendTo('#goods');
-  //     });
-  //   }, 'json');
-  // }
-
   function buildCart() {
     $.get('http://localhost:5000/cart', {}, function (items) {
-      // $('#cart').empty();
-      // var $ul = $('<ul/>');
+
       var total = 0;
 
       $('.cart-list__item').remove();
 
       items.forEach(function (item) {
         total += +item.price * +item.quantity;
-        // var $li = $('<li/>', {
-        //   text: item.name + ': ' + item.price + ' rub.',
-        //   'data-id': item.id,
-        //   'data-quantity': item.quantity
-        // });
-        // $li.append($('<button/>', {
-        //   text: 'X',
-        //   class: 'removeButton'
-        // }));
-        // $ul.append($li);
-
 
         var $divCartListItem = $('<div/>').addClass('cart-list__item');
         var $divCartListColumns = $('<div/>').addClass('cart-list__columns');
@@ -94,7 +60,6 @@
             "data-id": item.id,
             class: "removeButton"
           })
-          // .attr('href', '#')
             .append($('<i/>', {
               class: "fas fa-times-circle"
             })));
@@ -118,7 +83,6 @@
 
         var good = {
           id: $(this).attr('data-id'),
-          // quantity: +cartGood.eq(0).attr('placeholder') + 1,
           quantity: +cartGood.eq(0).val(),
           name: $(this).attr('data-name'),
           price: $(this).attr('data-price'),
@@ -157,25 +121,14 @@
         event.preventDefault();
       });
 
-      // $('#cart').append($ul);
-      // $('#cart').append('Total: ' + total + ' rub.' + '<br>');
-
       $('.price-tab').text('$' + total);
       $('.price-red').text('$' + total);
 
-      // var $clearButton = $('<button/>', {
-      //   text: 'Cleat Cart',
-      //   class: 'clearButton',
-      //   id: 'clearButton'
-      // });
-      // $('#cart').append($clearButton)
     }, 'json');
   }
 
-
   $(function () {
     buildCart();
-    // buildGoodsList();
 
     $('#goods').on('click', '.buy', function (event) {
 
@@ -199,14 +152,14 @@
           data: good,
           success: function () {
             buildCart();
-            // buildGoodsList();
+
           }
         })
       } else {
         good.quantity = 1;
         $.post('http://localhost:5000/cart', good, function (response) {
           buildCart();
-          // buildGoodsList();
+
         }, 'json');
       }
       event.preventDefault();
@@ -214,7 +167,7 @@
 
 
     $('#clearButton').on('click', function (event) {
-      // $('#cart').on('click', '#clearButton', function (event) {
+
       $.get('http://localhost:5000/cart/', {}, function (items) {
           items.forEach(function (item) {
             $.ajax({
@@ -229,10 +182,7 @@
         }
       );
 
-
       event.preventDefault()
     });
-
-
   });
 })(jQuery);

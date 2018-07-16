@@ -32,7 +32,9 @@
             success = 0
           }
         });
-        if (success === 0) {return}
+        if (success === 0) {
+          return
+        }
 
         var user = {
           email: email,
